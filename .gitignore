@@ -1,0 +1,24 @@
+# Scala / sbt build output
+target/
+project/target/
+
+# Scala language-server and build-server metadata
+.bloop/
+.bsp/
+.metals/
+**/project/metals.sbt
+
+# Local IDE/editor metadata
+.idea/
+.vscode/
+*.iml
+
+# Python caches and local virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Operating-system files
+.DS_Store
+Thumbs.db

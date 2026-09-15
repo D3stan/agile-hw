@@ -10,7 +10,9 @@ class MaxFinderTest extends AnyFlatSpec with ChiselScalatestTester with Matchers
         Seq(1, 5, 3, 2),
         Seq(8, 2, 7, 1),
         Seq(4, 4, 4, 4),
-        Seq(0, 9, 3, 6)
+        Seq(0, 9, 3, 6),
+        Seq(0, 0, 0, 0),
+        Seq(1, 1, 1, 1)
       ).foreach { inputs =>
       
         inputs.zipWithIndex.foreach { case (value, i) =>

@@ -12,5 +12,5 @@ class MaxFinder(val n: Int, val width: Int) extends Module {
     val max = Output(UInt(width.W))
   })
 
-  ???
+  io.max := io.in.reduceTree(_ > _)
 }

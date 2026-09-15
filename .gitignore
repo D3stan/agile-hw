@@ -1,6 +1,7 @@
 # Scala / sbt build output
 target/
 project/target/
+**/test_run_dir/
 
 # Scala language-server and build-server metadata
 .bloop/

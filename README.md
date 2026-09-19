@@ -52,11 +52,13 @@ Overall, the course will provide the students with a comprehensive understanding
 ### Week 4: Generators
 
  * [Slides](05_generators.pdf)
- * Project presentations
+* Lab: [lab4](lab4)
+
 
 ### Week 5: Digital Design with LLMs in Industry (Ioannis)
 
 Experiences of using LLMs at Microchip.
+ * Project presentations
 
 
 ### Week 6: Testing and CI
@@ -88,7 +90,6 @@ Experiences of using LLMs at Microchip.
 ### Week 11: Chisel in Research
 
  * [Slides](tbd.pdf)
- * Lab: [lab11](lab11)
 
 
 ## Group Projects 2025

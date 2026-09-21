@@ -9,7 +9,7 @@ class GeneratorTest extends AnyFlatSpec with ChiselScalatestTester {
 
 
   val annotations = if (enableWaveform) {
-    Seq(VerilatorBackendAnnotation, WriteVcdAnnotation)
+    Seq(WriteVcdAnnotation)
   } else {
     Seq()
   }

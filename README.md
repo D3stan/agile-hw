@@ -59,7 +59,7 @@ Overall, the course will provide the students with a comprehensive understanding
  * [Slides](05_generators.pdf)
  * Lab: [lab4](lab4)
  * Reading
-   - 10.4, 10.5, and 10.6 from the [Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)
+   - 10.4, 10.5, 10.6, and 11.3 from the [Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)
    - [Scala defined hardware generators for Chisel](https://www.sciencedirect.com/science/article/pii/S014193312500050X)
 
 ### Week 5: Digital Design with LLMs in Industry (Ioannis)

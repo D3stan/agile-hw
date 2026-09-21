@@ -38,33 +38,44 @@ Overall, the course will provide the students with a comprehensive understanding
 
   * [Slides](01_scala.pdf)
   * Lab: [lab0](lab0) and [lab1](lab1)
+  * Reading
+    - [Agile Manifesto](https://agilemanifesto.org/)
+    - [Scala Collections](https://docs.scala-lang.org/overviews/collections-2.13/overview.html)
+    - 10.1 from the [Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)
 
 ### Week 2: Introduction to Chisel
 
   * [Slides](02_chisel.pdf)
   * Labs from the Digital Electroncs 2 course: [Chisel Lab 2](https://github.com/schoeberl/chisel-lab/tree/master/lab2) and [Chisel Lab 3](https://github.com/schoeberl/chisel-lab/tree/master/lab3)
-
+ * Reading: Chapter 1 to 6 from the [Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)
 ### Week 3: Simple Generators (Kasper)
 
  * [Slides](03_simp_gen.pdf)
  * Labs: [lab2](lab2) and [lab3](lab3)
+ * Reading: 10.2, and 10.3 from the [Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)
 
 ### Week 4: Generators
 
  * [Slides](05_generators.pdf)
-* Lab: [lab4](lab4)
-
+ * Lab: [lab4](lab4)
+ * Reading
+   - 10.4, 10.5, and 10.6 from the [Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)
+   - [Scala defined hardware generators for Chisel](https://www.sciencedirect.com/science/article/pii/S014193312500050X)
 
 ### Week 5: Digital Design with LLMs in Industry (Ioannis)
 
 Experiences of using LLMs at Microchip.
+
  * Project presentations
+ * Lab: project work
+ * Reading: [Creating an Agile Hardware Design Flow](https://cs.stanford.edu/~niemetz/publications/2020/DAC2020.pdf)
 
 
 ### Week 6: Testing and CI
 
  * [Slides](06_testing_and_ci.pdf)
  * Lab: [lab6](lab6)
+ * Reading: Chapter 13 from the [Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)
 
  ### Week 7: Co-Simulation and Scrum
 
@@ -82,15 +93,26 @@ Experiences of using LLMs at Microchip.
   * Install Spade, see [Spade Setup](https://docs.spade-lang.org/agile/quick_setup.html)
   * Lab: [https://docs.spade-lang.org/agile/intro.html]
  
- ### Week 10: Mixed Topics
+ ### Week 10: TBD
 
-  * [Slides](10_mixed.pdf)
   * Lab: Project presentation and demo
 
 ### Week 11: Chisel in Research
 
  * [Slides](tbd.pdf)
 
+### Week 12: Project Work
+
+ * Lab: Project work
+
+### Week 13: Project Presentations
+
+  * Lab: Final project presentation and demo
+
+## Group Projects 2026
+
+ 1. TBD
+ 1. TBD
 
 ## Group Projects 2025
 
@@ -110,7 +132,7 @@ Experiences of using LLMs at Microchip.
 ## Further Material
 
  * [The Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)
- * [Scott's Agile Hardware Design Course](https://github.com/agile-hw/lectures)
+ * [Scott's Agile Hardware Design Course](https://scottbeamer.net/cse228a-sp25/project/index.html) and [slide sources](https://github.com/agile-hw/lectures)
  * [Agile SW on Wikipedia](https://en.wikipedia.org/wiki/Agile_software_development)
 
  ### Papers

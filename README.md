@@ -56,7 +56,7 @@ Overall, the course will provide the students with a comprehensive understanding
 
 ### Week 4: Generators
 
- * [Slides](05_generators.pdf)
+ * [Slides](04_generators.pdf)
  * Lab: [lab4](lab4)
  * Reading
    - 10.4, 10.5, 10.6, and 11.3 from the [Chisel book](https://www.imm.dtu.dk/~masca/chisel-book.html)

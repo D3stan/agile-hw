@@ -125,7 +125,11 @@ Take a look at the Excel source file `soc.xlsx`, the generated Verilog file `soc
 
 ### Testing
 
-Inside `src/test/scala/PythonGeneratorTest.scala`, a testbench is provided which instantiates the Python-generated CSR adapter as a blackbox and verifies its functionality for a few representative CSR's. You can use this testbench as further reference for the specification. Running the testbench requires a **Verilator** installation. The file also contains a starting point for your Chisel implementation. Use the testbench for the python generator as inspiration to create a more complete testbench for your Chisel implementation.
+Inside `src/test/scala/GeneratorTest.scala`, a testbench is provided which instantiates the Chisel version of the CSR adapter and the Python-generated CSR adapter as a blackbox and verifies its functionality for a few representative CSR's. You can use this testbench as further reference for the specification. Running the testbench requires a **Verilator** installation. The file also contains a starting point for your Chisel implementation. Use the testbench for the python generator as inspiration to create a more complete testbench for your Chisel implementation.
+
+Note that the latest version of **Verilator 5.50+ does not work with ChiselTest**. Use version 5.48 instead. See: https://socks.lbl.gov/mvega/chisel-fp-generators#verilator-version-ceiling
+
+The Chisel testbench does not need Verilator.
 
 The testbench uses a Bus Function Model (BFM) to abstract the driving of the APB interface. The BFM provides methods for reading, writing and reading with an expected value. The `Option[BigInt]` type is used to indicate whether an error occurred during the read transaction. An example usage of the BFM is shown below:
 

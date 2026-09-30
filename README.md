@@ -71,7 +71,7 @@ Experiences of using LLMs at Microchip.
  * Reading: [Creating an Agile Hardware Design Flow](https://cs.stanford.edu/~niemetz/publications/2020/DAC2020.pdf)
 
 
-### Week 6: Testing and CI
+### Week 6: Testing and CI (Emad)
 
  * [Slides](06_testing_and_ci.pdf)
  * Lab: [lab6](lab6)
@@ -81,23 +81,28 @@ Experiences of using LLMs at Microchip.
 
  * [Slides](07_co_sim.pdf)
  * Lab: [lab7](lab7)
+ * Present MVP
 
- ### Week 8: Formal Verification
+ ### Week 8: TBD
 
   * [Slides](08_formal.pdf)
   * Lab: [lab8](lab8)
 
- ### Week 9: Spade
+ ### Week 9: TBD
+
+  * Lab: Project presentation and demo
+
+ ### Week 10: Formal Verification (Amelia)
+
+  * Lab: Project presentation and demo
+
+### Week 11: Spade (Frans)
 
   * [Slides](spade.pdf)
   * Install Spade, see [Spade Setup](https://docs.spade-lang.org/agile/quick_setup.html)
   * Lab: [https://docs.spade-lang.org/agile/intro.html]
  
- ### Week 10: TBD
-
-  * Lab: Project presentation and demo
-
-### Week 11: Chisel in Research
+### Week xx: Chisel in Research (Maybe)
 
  * [Slides](tbd.pdf)
 

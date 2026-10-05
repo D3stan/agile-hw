@@ -65,7 +65,6 @@ class CsrAdapter(descriptionSheetPath: String) extends Module {
 
   val sheets = Sheet.load(descriptionSheetPath)
   val map = sheets("Map")
-  println(map)
 
   val apb = IO(new ApbPort)
 
@@ -131,7 +130,9 @@ class CsrAdapter(descriptionSheetPath: String) extends Module {
           flops(name) := data
         }
       case FieldType.WoTrg => {
-        csr(s"${name}.data") := data
+        when(wr_access && hit) {
+          flops(name) := data
+        }
         csr(s"${name}.trg") := wr_access && hit
       }
       case _ =>
@@ -168,12 +169,19 @@ class CsrAdapter(descriptionSheetPath: String) extends Module {
   rd_access := Mux(rd_access, false.B, apb.psel && !apb.pwrite)
   apb.pready := wr_access || rd_access
 
+  // Rw and WoTrg fields are stored in the adapter; init "?" means no reset value
   val flops = mutable.Map[String, UInt]()
-  for (cr <- csr_registers; f <- cr.reg.fields if f.typ == FieldType.Rw) {
+  for (
+    cr <- csr_registers;
+    f <- cr.reg.fields if f.typ == FieldType.Rw || f.typ == FieldType.WoTrg
+  ) {
     val name = createKeyName(cr, f)
-    val flop = RegInit(HardwareParser.encodeHex(f.init, f.width))
+    val flop =
+      if (f.init.trim == "?") Reg(UInt(f.width.W))
+      else RegInit(HardwareParser.encodeHex(f.init, f.width))
     flops(name) = flop
-    csr(name) := flop
+    if (f.typ == FieldType.Rw) csr(name) := flop
+    else csr(s"${name}.data") := flop
   }
   apb.prdata := 0.U
   val readHits = mutable.ArrayBuffer[Bool]()

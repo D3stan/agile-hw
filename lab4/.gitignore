@@ -1,0 +1,22 @@
+# sbt / Scala build output
+target/
+project/target/
+project/project/
+test_run_dir/
+
+# Build-server and IDE metadata
+.bloop/
+.bsp/
+.metals/
+.vscode/
+project/metals.sbt
+
+# Generated hardware (Chisel emitVerilog and Python generator output)
+generated/
+soc_adapter.sv
+
+# Python environment
+venv/
+__pycache__/
+
+.DS_Store

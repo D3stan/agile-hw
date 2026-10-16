@@ -81,12 +81,10 @@ Experiences of using LLMs at Microchip.
 
  * [Slides](07_co_sim.pdf)
  * Lab: [lab7](lab7)
- * Present MVP
 
- ### Week 8: TBD
+ ### Week 8: Project Presentation
 
-  * [Slides](08_formal.pdf)
-  * Lab: [lab8](lab8)
+  * Including presentation of a MVP
 
  ### Week 9: TBD
 
